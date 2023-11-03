@@ -16,7 +16,7 @@ class Employee(Address):
         self._lastName = lName
 
     def _nameFormat(self):
-        return f'{self._firstName} {self._lastName} {self._sunName}'
+        return f'{self._sunName} {self._firstName} {self._lastName}'
 
     def getFullName(self):
         return self._nameFormat()
@@ -25,4 +25,4 @@ emp = Employee()
 emp.setName(fName="Aravind", sName="P", lName="swami")
 emp.addAddress("Guntur")
 print(emp.getFullName())
-print(emp.addAddress())
+print(emp.getAddress())
