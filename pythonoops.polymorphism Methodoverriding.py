@@ -3,11 +3,11 @@
 class Employee:
     __amt = 25000
     def sal(self):
-        return self.__amt*2
+        return self.__amt*12
 
 class contractEmployee(Employee):
-    __hrpay = 2000
-    __hrs = 5
+    __hrpay = 1000
+    __hrs = 10
     def sal(self):
         return self.__hrpay*self.__hrs
 emp1=contractEmployee()
